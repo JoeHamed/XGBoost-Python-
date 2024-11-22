@@ -31,3 +31,33 @@ You can install these dependencies using `pip`:
 ```bash
 pip install numpy pandas matplotlib scikit-learn xgboost
 ```
+Dataset
+The dataset used in this project is assumed to be a CSV file (Data.csv). The features are stored in X, and the target variable is stored in y.
+
+Data Preprocessing:
+The target variable y has class labels 2 and 4 that are mapped to 0 and 1, respectively.
+Code Walkthrough
+Import Libraries:
+
+numpy, matplotlib, and pandas are imported for data handling and visualization.
+The XGBClassifier from the xgboost library is used for classification.
+Dataset Import and Preprocessing:
+
+The dataset is loaded using pd.read_csv('Data.csv').
+The features X and target y are extracted from the dataset.
+Class labels 2 and 4 are converted to 0 and 1, respectively.
+Splitting the Dataset:
+
+The dataset is split into training and test sets using train_test_split from scikit-learn.
+Model Training:
+
+The XGBClassifier is used to train the model on the training set.
+Confusion Matrix and Accuracy:
+
+The model's performance is evaluated using the confusion matrix and accuracy score.
+k-Fold Cross Validation:
+
+The model's stability and performance are further validated using 10-fold cross-validation.
+Results
+The confusion matrix shows that the model performs well with an accuracy of 97.81%.
+The k-fold cross-validation results show an average accuracy of 96.71% with a standard deviation of 2.28%.
