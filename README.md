@@ -55,8 +55,9 @@ pip install numpy pandas matplotlib scikit-learn xgboost
 - The model's stability and performance are further validated using 10-fold cross-validation.
 ## Results
 - The confusion matrix shows that the model performs well with an accuracy of `97.81%`.
-- The k-fold cross-validation results show an average accuracy of `96.71%` with a standard deviation of `2.28%`.
-####                   [[85  2]
+####  [[85  2]
 
 ####  [ 1 49]]
+- The k-fold cross-validation results show an average accuracy of `96.71%` with a standard deviation of `2.28%`.
+
 
