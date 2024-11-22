@@ -32,20 +32,20 @@ You can install these dependencies using `pip`:
 pip install numpy pandas matplotlib scikit-learn xgboost
 ```
 ### Dataset
-The dataset used in this project is assumed to be a CSV file (Data.csv). The features are stored in X, and the target variable is stored in y.
+- The dataset used in this project is assumed to be a CSV file (`Data.csv`). The features are stored in `X`, and the target variable is stored in `y`.
 
 ### Data Preprocessing:
-- The target variable y has class labels 2 and 4 that are mapped to 0 and 1, respectively.
+- The target variable y has class labels `2` and `4` that are mapped to `0` and `1`, respectively.
 ## Code Walkthrough
-Import Libraries:
+1. Import Libraries:
+- `numpy`, `matplotlib`, and `pandas` are imported for data handling and visualization.
+- The `XGBClassifier` from the `xgboost` library is used for classification.
+- 
+2. Dataset Import and Preprocessing:
 
-numpy, matplotlib, and pandas are imported for data handling and visualization.
-The XGBClassifier from the xgboost library is used for classification.
-Dataset Import and Preprocessing:
-
-The dataset is loaded using pd.read_csv('Data.csv').
-The features X and target y are extracted from the dataset.
-Class labels 2 and 4 are converted to 0 and 1, respectively.
+- The dataset is loaded using pd.read_csv('Data.csv').
+- The features X and target y are extracted from the dataset.
+- Class labels 2 and 4 are converted to 0 and 1, respectively.
 Splitting the Dataset:
 
 The dataset is split into training and test sets using train_test_split from scikit-learn.
