@@ -31,12 +31,12 @@ You can install these dependencies using `pip`:
 ```bash
 pip install numpy pandas matplotlib scikit-learn xgboost
 ```
-Dataset
+### Dataset
 The dataset used in this project is assumed to be a CSV file (Data.csv). The features are stored in X, and the target variable is stored in y.
 
-Data Preprocessing:
-The target variable y has class labels 2 and 4 that are mapped to 0 and 1, respectively.
-Code Walkthrough
+### Data Preprocessing:
+- The target variable y has class labels 2 and 4 that are mapped to 0 and 1, respectively.
+## Code Walkthrough
 Import Libraries:
 
 numpy, matplotlib, and pandas are imported for data handling and visualization.
