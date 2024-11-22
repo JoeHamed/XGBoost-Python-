@@ -37,27 +37,25 @@ pip install numpy pandas matplotlib scikit-learn xgboost
 ### Data Preprocessing:
 - The target variable y has class labels `2` and `4` that are mapped to `0` and `1`, respectively.
 ## Code Walkthrough
-1. Import Libraries:
+**1. Import Libraries:**
 - `numpy`, `matplotlib`, and `pandas` are imported for data handling and visualization.
 - The `XGBClassifier` from the `xgboost` library is used for classification.
-- 
-2. Dataset Import and Preprocessing:
+  
+**2. Dataset Import and Preprocessing:**
+- The dataset is loaded using `pd.read_csv('Data.csv')`.
+- The features `X` and target `y` are extracted from the dataset.
+- Class labels `2` and `4` are converted to `0` and `1`, respectively.
+**3. Splitting the Dataset:**
+- The dataset is split into training and test sets using train_test_split from scikit-learn.
+**4. Model Training:**
+- The XGBClassifier is used to train the model on the training set.
+**5. Confusion Matrix and Accuracy:**
+- The model's performance is evaluated using the confusion matrix and accuracy score.
+**6. k-Fold Cross Validation:**
+- The model's stability and performance are further validated using 10-fold cross-validation.
+## Results
+- The confusion matrix shows that the model performs well with an accuracy of `97.81%`.
+- The k-fold cross-validation results show an average accuracy of `96.71%` with a standard deviation of `2.28%`.
+#  [[85  2]
+#  [ 1 49]]
 
-- The dataset is loaded using pd.read_csv('Data.csv').
-- The features X and target y are extracted from the dataset.
-- Class labels 2 and 4 are converted to 0 and 1, respectively.
-Splitting the Dataset:
-
-The dataset is split into training and test sets using train_test_split from scikit-learn.
-Model Training:
-
-The XGBClassifier is used to train the model on the training set.
-Confusion Matrix and Accuracy:
-
-The model's performance is evaluated using the confusion matrix and accuracy score.
-k-Fold Cross Validation:
-
-The model's stability and performance are further validated using 10-fold cross-validation.
-Results
-The confusion matrix shows that the model performs well with an accuracy of 97.81%.
-The k-fold cross-validation results show an average accuracy of 96.71% with a standard deviation of 2.28%.
